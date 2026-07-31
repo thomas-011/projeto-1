@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog do Vôlei | Tudo sobre o Esporte</title>
+    <title>Rede Alta | Blog de Vôlei</title>
     <style>
         /* Ativa a rolagem suave ao clicar nos links do menu */
         html {
@@ -11,153 +11,200 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f4f7f6;
             color: #333;
         }
 
+        /* Cabeçalho Principal */
         header {
-            background-color: #004b87; /* Azul quadra */
+            background: linear-gradient(135deg, #004b87, #002e54);
             color: #fff;
-            padding: 2rem 1rem;
+            padding: 3rem 1rem 2rem 1rem;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
         }
 
         header p {
             margin-top: 0.5rem;
-            color: #ffd700; /* Amarelo bola */
+            color: #ffd700; /* Amarelo bola de vôlei */
+            font-size: 1.1rem;
+            font-weight: 500;
         }
 
-        /* Menu de Navegação Fixo e Estilizado */
+        /* Menu de Navegação */
         nav {
-            background-color: #00335c;
+            background-color: #00223e;
             text-align: center;
             padding: 0.8rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
 
         nav a {
-            color: white;
+            color: #ffffff;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 6px;
             padding: 8px 16px;
             border-radius: 20px;
             font-weight: bold;
-            transition: background-color 0.3s, color 0.3s;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
             display: inline-block;
         }
 
-        /* Efeito visual ao passar o mouse ou focar no botão */
+        /* Efeito de Destaque nos Botões do Menu */
         nav a:hover, nav a:focus {
             background-color: #ffd700;
-            color: #00335c;
+            color: #00223e;
+            transform: translateY(-2px);
         }
 
+        /* Layout Container */
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 2rem auto;
             padding: 0 1rem;
         }
 
+        /* Seções e Posts */
         article, section {
-            background: white;
-            padding: 1.5rem;
+            background: #ffffff;
+            padding: 2rem;
             margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            /* Espaçamento para o topo não ficar colado abaixo do menu fixo ao rolar */
-            scroll-margin-top: 70px; 
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            /* Evita que o topo do post fique escondido atrás do menu fixo */
+            scroll-margin-top: 75px; 
         }
 
-        article h2, section h2 {
+        h2 {
             color: #004b87;
             margin-top: 0;
-        }
-
-        /* Estilo para as imagens dos posts */
-        .post-img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-            border-radius: 6px;
-            margin: 1rem 0;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 0.5rem;
+            display: inline-block;
         }
 
         .data-post {
             font-size: 0.85rem;
-            color: #666;
+            color: #777;
             margin-bottom: 1rem;
         }
 
+        /* Estilo das Imagens */
+        .post-img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 1.2rem 0;
+        }
+
+        /* Lista de dicas */
+        ul {
+            background-color: #f8f9fa;
+            padding: 1.2rem 2rem;
+            border-left: 4px solid #004b87;
+            border-radius: 4px;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Grid da Galeria */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin-top: 1rem;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Rodapé */
         footer {
             text-align: center;
-            padding: 1.5rem;
-            background-color: #004b87;
-            color: white;
-            margin-top: 2rem;
+            padding: 2rem 1rem;
+            background-color: #00223e;
+            color: #ffffff;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
     <header id="inicio">
-        <h1>🏐 Rede Alta | Blog de Vôlei</h1>
-        <p>Táticas, notícias e dicas para evoluir no jogo</p>
+        <h1>🏐 Rede Alta</h1>
+        <p>Táticas, fundamentos e tudo sobre o universo do voleibol</p>
     </header>
 
     <nav>
         <a href="#inicio">Início</a>
         <a href="#tecnica">Técnica</a>
         <a href="#taticas">Táticas</a>
+        <a href="#galeria">Galeria</a>
         <a href="#sobre">Sobre</a>
     </nav>
 
     <div class="container">
 
         <article id="tecnica">
-            <h2>Como Melhorar a Precisão do Saque Flutuante</h2>
+            <h2>Como Dominar o Saque Flutuante</h2>
             <div class="data-post">Publicado em 31 de Julho de 2026</div>
             
-            <img class="post-img" src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=1000&auto=format&fit=crop" alt="Jogador de vôlei prestes a sacar">
+            <img class="post-img" src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=1000&auto=format&fit=crop" alt="Jogador preparando o saque no vôlei">
             
-            <p>O saque flutuante é uma das armas mais eficientes no vôlei moderno. Como a bola não gira, o vento e a aerodinâmica criam trajetórias imprevisíveis para a recepção adversária.</p>
-            <h3>Dicas rápidas:</h3>
+            <p>O saque flutuante é uma das armas mais táticas e eficientes do voleibol moderno. Por não ter rotação, a bola sofre influência direta das correntes de ar, criando uma trajetória imprevisível para os passadores.</p>
+            
+            <h3>Passos para melhorar seu saque:</h3>
             <ul>
-                <li>Bata no centro exato da bola.</li>
-                <li>Mantenha o pulso firme (sem flexionar).</li>
-                <li>Interrompa o movimento do braço logo após o contato.</li>
+                <li><strong>Contato seco:</strong> Golpeie o centro exato da bola com a palma da mão bem firme.</li>
+                <li><strong>Bloqueio do braço:</strong> Interrompa o movimento do braço logo após o impacto para evitar a rotação.</li>
+                <li><strong>Postura:</strong> Mantenha o corpo equilibrado e solte a bola ligeiramente à frente do corpo.</li>
             </ul>
         </article>
 
         <article id="taticas">
-            <h2>Entendendo o Sistema Tático 5x1</h2>
+            <h2>Entendendo a Dinâmica do Sistema 5x1</h2>
             <div class="data-post">Publicado em 28 de Julho de 2026</div>
             
-            <img class="post-img" src="https://images.unsplash.com/photo-1592656094267-764a45160876?q=80&w=1000&auto=format&fit=crop" alt="Partida de vôlei com bloqueio e ataque">
+            <img class="post-img" src="https://images.unsplash.com/photo-1592656094267-764a45160876?q=80&w=1000&auto=format&fit=crop" alt="Ação de jogo com ataque e bloqueio">
             
-            <p>O sistema 5x1 é o mais utilizado no voleibol de alto rendimento. Nele, há apenas um levantador em quadra e cinco atacantes espalhados pelas posições...</p>
+            <p>O sistema 5x1 é a formação tática mais utilizada no alto rendimento. Ele conta com apenas um levantador especialista e cinco atacantes distribuídos nas posições da quadra.</p>
+            <p>A grande vantagem deste sistema é a padronização das distribuições de jogo, permitindo rotas de infiltração eficientes para o levantador quando este está na rede de defesa (posições 1, 6 e 5).</p>
         </article>
 
-        <section id="sobre">
-            <h2>Sobre o Blog</h2>
-            <p>Bem-vindo ao <strong>Rede Alta</strong>! Este projeto foi criado no GitHub para compartilhar dicas, análises táticas e tudo sobre o universo do voleibol.</p>
-        </section>
-
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Blog de Vôlei. Feito para o GitHub Pages.</p>
-    </footer>
-
-</body>
-</html>
+        <section id="galeria">
+            <h2>Galeria da Quadra</h2>
+            <p>Confira alguns momentos marcantes do esporte:</p>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1592656094267-764a45160876?q=80&w=600&auto=format&fit=crop" alt="Jogo de vôlei">
+                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=600&auto=format&fit=crop" alt="Saque de vôlei">
+                <img src="https
