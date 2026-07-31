@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog do Vôlei | Tudo sobre o Esporte</title>
     <style>
-        /* Estilos básicos para deixar o visual bonito */
+        /* Ativa a rolagem suave ao clicar nos links do menu */
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -32,21 +36,31 @@
             color: #ffd700; /* Amarelo bola */
         }
 
+        /* Menu de Navegação Fixo e Estilizado */
         nav {
             background-color: #00335c;
             text-align: center;
-            padding: 0.5rem;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px;
+            padding: 8px 16px;
+            border-radius: 20px;
             font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
         }
 
-        nav a:hover {
-            color: #ffd700;
+        /* Efeito visual ao passar o mouse ou focar no botão */
+        nav a:hover, nav a:focus {
+            background-color: #ffd700;
+            color: #00335c;
         }
 
         .container {
@@ -55,15 +69,17 @@
             padding: 0 1rem;
         }
 
-        article {
+        article, section {
             background: white;
             padding: 1.5rem;
             margin-bottom: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            /* Espaçamento para o topo não ficar colado abaixo do menu fixo ao rolar */
+            scroll-margin-top: 70px; 
         }
 
-        article h2 {
+        article h2, section h2 {
             color: #004b87;
             margin-top: 0;
         }
@@ -94,7 +110,7 @@
 </head>
 <body>
 
-    <header>
+    <header id="inicio">
         <h1>🏐 Rede Alta | Blog de Vôlei</h1>
         <p>Táticas, notícias e dicas para evoluir no jogo</p>
     </header>
@@ -131,6 +147,11 @@
             
             <p>O sistema 5x1 é o mais utilizado no voleibol de alto rendimento. Nele, há apenas um levantador em quadra e cinco atacantes espalhados pelas posições...</p>
         </article>
+
+        <section id="sobre">
+            <h2>Sobre o Blog</h2>
+            <p>Bem-vindo ao <strong>Rede Alta</strong>! Este projeto foi criado no GitHub para compartilhar dicas, análises táticas e tudo sobre o universo do voleibol.</p>
+        </section>
 
     </div>
 
