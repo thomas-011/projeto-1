@@ -3,221 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rede Alta | Blog de Vôlei</title>
+    <title>Projeto Vôlei</title>
     <style>
-        /* Rolagem suave para navegação fluida */
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f6;
+            background-color: #f4f4f9;
             color: #333;
+            text-align: center;
         }
-
-        /* Cabeçalho */
         header {
-            background: linear-gradient(135deg, #004b87, #002e54);
-            color: #fff;
-            padding: 3rem 1rem 2rem 1rem;
-            text-align: center;
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.8rem;
-            letter-spacing: 1px;
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
-
-        header p {
-            margin-top: 0.5rem;
-            color: #ffd700;
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-
-        /* Menu de Navegação Fixo */
-        nav {
-            background-color: #00223e;
-            text-align: center;
-            padding: 0.8rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 6px;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-
-        nav a:hover, nav a:focus {
-            background-color: #ffd700;
-            color: #00223e;
-            transform: translateY(-2px);
-        }
-
-        /* Estrutura do Conteúdo */
-        .container {
-            max-width: 850px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        article, section {
-            background: #ffffff;
-            padding: 2rem;
-            margin-bottom: 2rem;
+        img {
+            max-width: 100%;
+            height: auto;
             border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            scroll-margin-top: 75px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
         }
-
-        h2 {
-            color: #004b87;
-            margin-top: 0;
-            border-bottom: 2px solid #ffd700;
-            padding-bottom: 0.5rem;
-            display: inline-block;
-        }
-
-        .data-post {
-            font-size: 0.85rem;
-            color: #777;
-            margin-bottom: 1rem;
-        }
-
-        .post-img {
-            width: 100%;
-            height: 380px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin: 1.2rem 0;
-        }
-
-        ul {
-            background-color: #f8f9fa;
-            padding: 1.2rem 2rem;
-            border-left: 4px solid #004b87;
-            border-radius: 4px;
-        }
-
-        ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        /* Grid da Galeria */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 15px;
-            margin-top: 1rem;
-        }
-
-        .gallery-grid img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 6px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .gallery-grid img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-
-        /* Rodapé */
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            background-color: #00223e;
-            color: #ffffff;
-            margin-top: 3rem;
-            font-size: 0.9rem;
-        }
-
-        footer p {
-            margin: 0;
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
         }
     </style>
 </head>
 <body>
 
-    <header id="inicio">
-        <h1>🏐 Rede Alta</h1>
-        <p>Táticas, fundamentos e tudo sobre o universo do voleibol</p>
+    <header>
+        <h1>Mundo do Vôlei</h1>
     </header>
 
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#tecnica">Técnica</a>
-        <a href="#taticas">Táticas</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#sobre">Sobre</a>
-    </nav>
+    <main>
+        <h2>A Paixão pelo Esporte</h2>
+        <p>
+            O vôlei é um esporte de equipe dinâmico e empolgante, praticado por milhões de pessoas em todo o mundo. 
+            Exige agilidade, trabalho em equipe e muita precisão a cada saque, passe e cortada.
+        </p>
 
-    <div class="container">
+        <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=800&q=80" alt="Partida de Vôlei">
 
-        <article id="tecnica">
-            <h2>Como Dominar o Saque Flutuante</h2>
-            <div class="data-post">Publicado em 31 de Julho de 2026</div>
-            
-            <img class="post-img" src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=1000&auto=format&fit=crop" alt="Jogador preparando o saque no vôlei">
-            
-            <p>O saque flutuante é uma das armas mais táticas e eficientes do voleibol moderno. Por não ter rotação, a bola sofre influência direta das correntes de ar, criando uma trajetória imprevisível para os passadores.</p>
-            
-            <h3>Passos para melhorar seu saque:</h3>
-            <ul>
-                <li><strong>Contato seco:</strong> Golpeie o centro exato da bola com a palma da mão bem firme.</li>
-                <li><strong>Bloqueio do braço:</strong> Interrompa o movimento do braço logo após o impacto para evitar a rotação.</li>
-                <li><strong>Postura:</strong> Mantenha o corpo equilibrado e solte a bola ligeiramente à frente do corpo.</li>
-            </ul>
-        </article>
-
-        <article id="taticas">
-            <h2>Entendendo a Dinâmica do Sistema 5x1</h2>
-            <div class="data-post">Publicado em 28 de Julho de 2026</div>
-            
-            <img class="post-img" src="https://images.unsplash.com/photo-1592656094267-764a45160876?q=80&w=1000&auto=format&fit=crop" alt="Ação de jogo com ataque e bloqueio">
-            
-            <p>O sistema 5x1 é a formação tática mais utilizada no alto rendimento. Ele conta com apenas um levantador especialista e cinco atacantes distribuídos nas posições da quadra.</p>
-            <p>A grande vantagem deste sistema é a padronização das distribuições de jogo, permitindo rotas de infiltração eficientes para o levantador quando este está na rede de defesa (posições 1, 6 e 5).</p>
-        </article>
-
-        <section id="galeria">
-            <h2>Galeria da Quadra</h2>
-            <p>Confira alguns momentos marcantes do esporte:</p>
-            <div class="gallery-grid">
-                <img src="https://images.unsplash.com/photo-1592656094267-764a45160876?q=80&w=600&auto=format&fit=crop" alt="Ataque no vôlei sobre o bloqueio">
-                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=600&auto=format&fit=crop" alt="Jogador preparando o saque">
-                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=600&auto=format&fit=crop" alt="Bola de vôlei na quadra">
-            </div>
-        </section>
-
-        <section id="sobre">
-            <h2>Sobre o Projeto</h2>
-            <p>Este blog foi desenvolvido por <strong>Thomas Barbosa</strong>, aluno do Primeiro Ano A, com o objetivo de auxiliar as pessoas a evoluírem no esporte voleibol.</p>
-            <p>Aqui você encontrará dicas práticas, análises de fundamentos e conteúdos educativos para melhorar o seu desempenho em quadra.</p>
-        </section>
-
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Rede Alta - Blog de Vôlei | Desenvolvido por Thomas Barbosa</p>
-    </footer>
+        <p>
+            Seja na quadra ou na praia, o objetivo principal é não deixar a bola tocar o chão do seu lado da rede!
+        </p>
+    </main>
 
 </body>
 </html>
